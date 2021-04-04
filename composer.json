@@ -5,6 +5,7 @@
         "laravel",
         "helpers"
     ],
+    "minimum-stability": "dev",
     "homepage": "https://github.com/AhmadAlArezi/Baloot2",
     "license": "MIT",
     "type": "library",
