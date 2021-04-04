@@ -29,9 +29,6 @@
         "psr-4": {
             "Baloot\\": "src"
         },
-        "classmap": [
-            "database/seeds"
-        ],
         "files": [
             "src/helpers.php"
         ]
