@@ -1,0 +1,54 @@
+{
+    "name": "ahmadalarezi/baloot2",
+    "description": "Laravel helper package for iranians",
+    "keywords": [
+        "laravel",
+        "helpers"
+    ],
+    "homepage": "https://github.com/AhmadAlArezi/Baloot2",
+    "license": "MIT",
+    "type": "library",
+    "authors": [
+        {
+            "name": "Ahmad Alarezi",
+            "email": "ahmadyahyae73@gmail.com"
+        }
+    ],
+    "require": {
+        "php": "^7.3|^8.0",
+        "hekmatinasser/verta": "^1.11",
+        "illuminate/support": "^7 | ^8",
+        "cviebrock/eloquent-sluggable": "^7 | ^8"
+    },
+    "autoload": {
+        "psr-4": {
+            "Baloot\\": "src"
+        },
+        "classmap": [
+            "database/seeds"
+        ],
+        "files": [
+            "src/helpers.php"
+        ]
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Baloot\\Tests\\": "tests"
+        }
+    },
+    "scripts": {
+        "test": "\"vendor/bin/phpunit\"",
+        "test-coverage": "\"vendor/bin/phpunit\" --coverage-html coverage"
+
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Baloot\\BalootServiceProvider"
+            ]
+        }
+    }
+}
